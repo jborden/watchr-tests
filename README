@@ -1,0 +1,12 @@
+This is a small project with demo scripts for using watchr as part of a continuous testing suite. This is code that goes along with the following blog post:
+
+http://bordenia.wordpress.com/2011/12/20/continuous-testing-of-lime-unit-tests-in-symfony-1-4-using-watchr-growl-growlnotify-and-launchd-plists/
+
+Manifest
+
+watchr1.rb - very small demo script to show the basics of how watchr is used.
+watchr2.rb - a practical script for running tests with. Please modify this to suite your needs.
+watchr.plist - a plist for use on Mac OS X to launch watchr at startup.
+passed.png  -  Both of these images were scrapped from wikipedia. They have been released
+failed.png  -  to the public domain. See my blog post for links to the original images.
+

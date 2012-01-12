@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" \
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Contains a unique string that identifies your plist to launchd.
+       This key is required. -->
+  <key>label</key>
+    <string>watchr.plist</string>
+    <!-- watchr is started in the same dir as the watchr.rb script
+         by setting our project_root -->
+    <key>WorkingDirectory</key>
+    <string>/Library/WebServer/Documents/project_root</string>
+    <!-- Contains the arguments [to execvp()] used to launch your daemon.
+    This key is required.  -->
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/watchr</string>
+      <string>/Library/WebServer/Documents/project_root/watchr.rb</string>
+    </array>
+    <!-- This plist is loaded whenever I log in, but the command is not
+    automatically run. This key ensures that it is run whenever this plist file is loaded -->
+    <key>RunAtLoad</key><true/>
+</dict>
+</plist>
